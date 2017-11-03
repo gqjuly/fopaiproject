@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0036)http://xjn.jxbdxx.com/images/js.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK"><title></title>
+
+<style>BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.js {
+	position:relative;
+	TEXT-ALIGN: center; LINE-HEIGHT:1.4empx; MARGIN: 0px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR:#ff0000; FONT-SIZE: 20px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+</style>
+
+<meta name="GENERATOR" content="MSHTML 8.00.6001.19393"></head>
+<body marginwidth="0" marginheight="0">
+<div class="js">活动时间：<span id="span_dt_sj01">2017年7月7日</span><br>活动结束还有：<span id="span_dt_dt">3小时27分52秒</span>
+<script language="javascript">
+<!--
+function show_student_time(){
+
+
+var LSTR_ndate=new Date(); 
+var LSTR_Year=LSTR_ndate.getFullYear(); 
+var LSTR_Month=LSTR_ndate.getMonth()+1; 
+var LSTR_Date=LSTR_ndate.getDate(); 
+var be_Date=LSTR_ndate.getDate()-1; 
+var span_dt_sj01 = document.getElementById("span_dt_sj01")
+var span_dt_dt = document.getElementById("span_dt_dt")
+
+span_dt_sj01.innerHTML=LSTR_Year+'年'+LSTR_Month+'月'+LSTR_Date+'日'
+
+ window.setTimeout("show_student_time()", 1000);
+ BirthDay=new Date(LSTR_Year,LSTR_Month-1,LSTR_Date+1);//改成你的计时日期
+ today=new Date();
+ timeold=(BirthDay.getTime()-today.getTime());
+ sectimeold=timeold/1000
+ secondsold=Math.floor(sectimeold);
+ msPerDay=24*60*60*1000 
+ e_daysold=timeold/msPerDay
+ daysold=Math.floor(e_daysold);
+ e_hrsold=(e_daysold-daysold)*24;
+ hrsold=Math.floor(e_hrsold);
+ e_minsold=(e_hrsold-hrsold)*60;
+ minsold=Math.floor((e_hrsold-hrsold)*60);
+ seconds=Math.floor((e_minsold-minsold)*60);
+ span_dt_dt.innerHTML=hrsold+"小时"+minsold+"分"+seconds+"秒" ;
+ 
+}
+show_student_time();
+//-->
+</script>
+ </div>
+</body></html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>恭喜您订购成功！</title>
+    <style type="text/css">
+        <!--
+        *{margin:0;padding:0;}
+        body{font:12px Arial,Verdana,simsun,\u5b8b\u4f53;color:#333;text-align:left;padding-top:10px;background-color:#fff;} 
+        a:link,a:visited{color:#F00;text-decoration:none;}a:hover{color:#090;text-decoration:underline;}
+		ul,li{list-style:none;display:block;}
+        img{border:0 none;vertical-align:middle;}
+		#head{width:320px;margin:0 auto;height:60px;text-align:center;border-bottom:2px dotted #DDD;}
+		#foot{width:320px;margin:0 auto;height:120px;text-align:center;border-top:2px dotted #DDD;}
+        #wfok{width:300px;margin:20px auto;height:auto;padding:10px;}
+        #wfok li{width:300px;height:40px;line-height:40px;border-bottom:1px dotted #DDD;}    
+        #wfok li span.l{float:left;width:80px;text-align:right;}    
+        #wfok li span.r{float:right;width:220px;color:#BD0000;}   
+        -->
+    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<script type="text/javascript">
+    function getValue(name){
+		var value = "";
+		var href = String(window.document.location.href);
+		var match = href.match(new RegExp("(^|)" + name + "=([^&]*)(&|$)", "gi"));
+		if(match.length>0) {
+			for(var i=0;i<match.length;i++) {
+				value += decodeURI(match[i].replace(name+'=', '').replace('&',''))+",";
+			}
+		}
+		return value; 
+    }
+        document.onkeydown = function()
+        {
+            if(event.keyCode==116) {
+　　            event.keyCode=0;
+　　            event.returnValue = false;
+            }
+        }
+        document.oncontextmenu = function()
+        {
+            event.returnValue = false;
+        }
+        
+    </script>
+
+<div id="head">
+    <img src="./images/wfok.gif">
+</div>
+<div id="wfok">
+    <ul>
+        <li style=" height:50px;line-height:normal">
+            <span class="l">生肖本命佛：</span>
+            <span class="r"><script>document.write(getValue("sx"));</script></span>        </li>
+       <li style=" height:50px;line-height:normal">
+            <span class="l">订购圣品：</span>
+            <span class="r"><script>document.write(getValue("product"));</script></span>        </li>
+        <li style=" height:50px;line-height:normal">
+            <span class="l">收货人姓名：</span>
+            <span class="r"><script>document.write(getValue("name"));</script></span>        </li>
+        <li style=" height:50px;line-height:normal">
+            <span class="l">手机号码：</span>
+            <span class="r"><script>document.write(getValue("mob"));</script></span>        </li>
+        <li style=" height:50px;line-height:normal">
+          <span class="l">省份市区：</span>
+          <span class="r"><script>document.write(getValue("province")+getValue("city")+getValue("area"));</script></span>        </li>
+        <li style=" height:50px;line-height:normal">
+          <span class="l">详细地址：</span>
+          <span class="r"><script>document.write(getValue("address"));</script></span>        </li>       
+    </ul>
+</div>
+<div id="foot">
+    <a href="Javascript:window.history.go(-1)" title="返回首页"><img src="./images/wfgo.gif" alt="返回首页"></a>
+</div>
+<!-------------------------- ↓↓↓此处添加统计转化代码↓↓↓ -------------------------->
+
+
+<!-------------------------- ↑↑↑此处添加统计转化代码↑↑↑ -------------------------->
+</body></html>
