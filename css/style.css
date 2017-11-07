@@ -1,0 +1,149 @@
+
+
+	*{
+		/*font-family: 微软雅黑;*/
+	/*	font-size: 40px;*/
+		
+	}
+
+	.col-md-4{
+		background: #FCF9E8
+	}
+
+	@media (max-width: 992px){
+		
+	}
+
+	img{
+		width: 100%;
+	}
+
+	.bolder{
+		font-weight: bold;
+	}
+	.bigText{
+		font-size: 16px;
+	}
+	.colorRed{
+		color: red;
+	}
+	.colorRedC{
+		color: #c00000;
+	}
+	.bgYellow{
+		background-color: #FFDA51;
+		width: 60px;
+		
+	}
+	.bgYellowLong{
+		background-color: #FFDA51;
+		width: 150px;
+		
+	}
+
+	.centerT{
+		text-align: center;
+	}
+
+	.belowShadow{
+		/*-webkit-box-reflect:below -8px;
+		-webkit-gradient(linear, left top, left bottom,from(rgba(0,0,0,0)), to(rgba(255,255,2550.4)));*/
+		-webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 20%,rgba(255,255,255,.2));
+		/*line-height:1;*/
+	}
+	.marginL{
+		margin-left: 20px;
+	}
+
+	.hr1{
+		/*height: 2px;
+		color: red;*/
+		border: none;
+		border-top: 1px;
+		color: red;
+		border-style: solid;
+	}
+	.styleFloat{
+		float: left;
+		padding:5px;
+		background: red;
+		margin-top: -18px;
+		color: white;
+		line-height: 20px;
+	}
+	.hr2{
+		/*height: 2px;
+		color: red;*/
+		border: none;
+		border-top: 0.1px;
+		color: red;
+		border-style: solid;
+		width: 350px;
+
+	}
+	.styleCenter{
+		float: left;
+		background: red;
+		color: white;
+		position:relative;
+		right:-35%;
+		padding: 3px;
+	}
+	.st3{
+		color: yellow;
+		background: #c00000;
+	}
+	.indentText{
+		text-indent: 25px;
+	}
+	.st4{
+		color: white;
+		background: #c00000;
+	}
+
+	.hr3{
+		
+		color: red;
+		border-style: solid;
+	}
+
+	.text_font{
+		font-family: YouYuan;
+		text-indent: 2em;
+		line-height: 1.5em;
+		letter-spacing: 5px;
+	}
+	
+	.marginT{
+		margin-top: 20px;
+	}
+
+	.yellowText{
+		color: yellow;
+		background: #c00000;
+	}
+	.redWine{
+		color: #791139;
+	}
+	.redText{
+		color: red;
+		background: #ffda51;
+	}
+	.redYellowText{
+		color: yellow;
+		background: red;
+	}
+	.bigBigText{
+		font-size: 20px;
+	}
+	.bigText2{
+		font-size: 16px;
+	}
+	.lastDiv{
+		text-align: center;
+		color: #5c5c5c;
+		font-size: 12px;
+		margin-top: 35px;
+	}
+	
+
