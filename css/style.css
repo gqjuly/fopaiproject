@@ -145,5 +145,27 @@
 		font-size: 12px;
 		margin-top: 35px;
 	}
+	.imgCenter{
+		
+		margin: 0 auto;
+	}
+	.posifix{
+		background: blue;
+		position: fixed;
+		bottom: 0px;
+		height: 50px;
+		width: 100%;
+	}
+	.daojishi {
+		position:relative;
+		text-align: center; 
+		line-height:1.4em; 
+		margin: 0px; 
+		font-family: Arial, Helvetica, sans-serif; 
+		color:#ff0000; 
+		font-size: 20px; 
+		vertical-align: middle; 
+		font-weight: bold
+	}
 	
 
